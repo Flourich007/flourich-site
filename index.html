@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Flourich Edit | Curated Finds, Deals & Everyday Favorites" />
+  <meta name="author" content="Nancy Perez" />
+  <meta name="p:domain_verify" content="PASTE_YOUR_PINTEREST_CODE_HERE" />
   <title>The Flourich Edit</title>
 
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <style>
     body {
@@ -19,14 +23,25 @@
     /* HERO */
     .hero {
       position: relative;
-      text-align: center;
-      color: white;
+      height: 90vh;
+      overflow: hidden;
     }
 
     .hero img {
       width: 100%;
-      height: 90vh;
+      height: 100%;
       object-fit: cover;
+    }
+
+    /* OVERLAY */
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(248, 245, 242, 0.55); /* soft beige overlay */
     }
 
     .hero-text {
@@ -34,16 +49,21 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 2;
     }
 
     .hero-text h1 {
       font-family: 'Allura', cursive;
       font-size: 5rem;
       margin: 0;
+      color: #3e3e3e;
     }
 
     .hero-text p {
       font-size: 1.1rem;
+      color: #3e3e3e;
+      letter-spacing: 1px;
     }
 
     .socials {
@@ -53,7 +73,8 @@
     .socials a {
       margin: 0 10px;
       font-size: 1.6rem;
-      color: white;
+      color: #3e3e3e;
+      text-decoration: none;
     }
 
     section {
@@ -64,6 +85,8 @@
 
     h2 {
       color: #c8a2a2;
+      margin-bottom: 1.5rem;
+      font-weight: 500;
     }
 
     .grid {
@@ -73,11 +96,16 @@
     }
 
     .card {
-      background: white;
+      background: #ffffff;
       padding: 1rem;
       border-radius: 16px;
       text-align: center;
       box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
     }
 
     .card img {
@@ -85,17 +113,23 @@
       border-radius: 12px;
     }
 
+    .card p {
+      margin: 0.7rem 0;
+    }
+
     .card a {
       display: inline-block;
       margin-top: 0.5rem;
-      color: #c8a2a2;
       text-decoration: none;
+      color: #c8a2a2;
+      font-weight: 500;
     }
 
     footer {
       text-align: center;
       padding: 2rem;
       background: #e7d6cd;
+      margin-top: 3rem;
     }
   </style>
 </head>
@@ -104,7 +138,7 @@
 
 <!-- HERO -->
 <div class="hero">
-  <img src="nancy.jpeg.jpg">
+  <img src="nancy.jpeg.jpg" alt="Nancy Perez">
   <div class="hero-text">
     <h1>The Flourich Edit</h1>
     <p>curated finds • soft living • everyday luxury ✨</p>
@@ -124,13 +158,13 @@
   <div class="grid">
 
     <div class="card">
-      <img src="washer.jpeg">
+      <img src="washer.jpeg" alt="Mini washer dryer">
       <p>Small Apartment Washer That Saved Me 😭</p>
       <a href="https://amzn.to/40xwqGZ" target="_blank">Shop Now</a>
     </div>
 
     <div class="card">
-      <img src="eyepads.jpeg">
+      <img src="eyepads.jpeg" alt="Self heating eye pads">
       <p>Self Heating Eye Pads for Dry Eyes</p>
       <a href="https://amzn.to/3NuVw6n" target="_blank">Shop Now</a>
     </div>
@@ -151,3 +185,4 @@
 
 </body>
 </html>
+
