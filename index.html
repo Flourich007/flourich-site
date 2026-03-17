@@ -5,36 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Flourich Edit</title>
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: #f9f7f6;
-      color: #4b3e3e;
+      background: #f8f5f2;
+      color: #3e3e3e;
     }
 
-    header {
+    /* HERO SECTION */
+    .hero {
+      position: relative;
       text-align: center;
-      padding: 3rem 1rem;
-      background: linear-gradient(135deg, #efe3e3, #dbc1ac);
+      color: white;
     }
 
-    h1 {
+    .hero img {
+      width: 100%;
+      height: 90vh;
+      object-fit: cover;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .hero-text h1 {
       font-family: 'Allura', cursive;
-      font-size: 4rem;
+      font-size: 5rem;
       margin: 0;
-      color: #6d4c4c;
     }
 
-    header p {
-      margin-top: 0.5rem;
-      font-size: 0.95rem;
+    .hero-text p {
+      font-size: 1.1rem;
+      letter-spacing: 1px;
     }
 
     .socials {
@@ -43,106 +54,96 @@
 
     .socials a {
       margin: 0 10px;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       color: white;
-      text-decoration: none;
     }
 
     section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
     }
 
     h2 {
-      margin-bottom: 1rem;
-      font-weight: 500;
+      color: #c8a2a2;
+      margin-bottom: 1.5rem;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
     }
 
     .card {
       background: white;
       padding: 1rem;
-      border-radius: 14px;
+      border-radius: 16px;
       text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.05);
     }
 
     .card img {
       width: 100%;
-      border-radius: 10px;
-    }
-
-    .card p {
-      margin: 0.5rem 0;
+      border-radius: 12px;
     }
 
     .card a {
       display: inline-block;
       margin-top: 0.5rem;
+      color: #c8a2a2;
       text-decoration: none;
-      color: #a06a6a;
-      font-weight: 500;
     }
 
     footer {
       text-align: center;
-      padding: 1.5rem;
-      background: #dbc1ac;
-      color: white;
-      margin-top: 2rem;
+      padding: 2rem;
+      background: #e7d6cd;
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>The Flourich Edit</h1>
-  <p>curated finds • everyday favorites • deals ✨</p>
+<!-- HERO -->
+<div class="hero">
+  <img src="nancy.jpeg">
+  <div class="hero-text">
+    <h1>The Flourich Edit</h1>
+    <p>curated finds • soft living • everyday luxury ✨</p>
 
-  <div class="socials">
-    <a href="https://www.pinterest.com/FlourichwithNan/" target="_blank">
-      <i class="fab fa-pinterest"></i>
-    </a>
-    <a href="https://www.instagram.com/love_flouriches/" target="_blank">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://www.tiktok.com/@flourichwithnan" target="_blank">
-      <i class="fab fa-tiktok"></i>
-    </a>
+    <div class="socials">
+      <a href="https://www.pinterest.com/FlourichwithNan/" target="_blank"><i class="fab fa-pinterest"></i></a>
+      <a href="https://www.instagram.com/love_flouriches/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@flourichwithnan" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
   </div>
-</header>
+</div>
 
+<!-- PRODUCTS -->
 <section>
-  <h2>🛒 Amazon Finds</h2>
+  <h2>Shop My Finds</h2>
 
   <div class="grid">
 
-    <!-- Washer -->
     <div class="card">
-      <img src="washer.jpeg" alt="Mini washer dryer for apartments">
+      <img src="washer.jpeg">
       <p>Small Apartment Washer That Saved Me 😭</p>
       <a href="https://amzn.to/40xwqGZ" target="_blank">Shop Now</a>
     </div>
 
-    <!-- Eye Pads -->
     <div class="card">
-      <img src="eyepads.jpeg" alt="Self heating eye pads">
-      <p>Self Heating Eye Pads for Dry Eyes (Game Changer)</p>
+      <img src="eyepads.jpeg">
+      <p>Self Heating Eye Pads for Dry Eyes</p>
       <a href="https://amzn.to/3NuVw6n" target="_blank">Shop Now</a>
     </div>
 
   </div>
 </section>
 
+<!-- WORK WITH ME -->
 <section>
-  <h2>💼 Work With Me</h2>
+  <h2>Work With Me</h2>
   <p>Open to brand collaborations, UGC, and affiliate partnerships.</p>
   <p><a href="mailto:flourichllc@gmail.com">flourichllc@gmail.com</a></p>
 </section>
