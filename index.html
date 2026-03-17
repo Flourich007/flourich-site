@@ -7,35 +7,53 @@
   <meta name="author" content="Nancy Perez" />
   <meta name="p:domain_verify" content="PASTE_YOUR_PINTEREST_CODE_HERE" />
   <title>The Flourich Edit</title>
+
+  <!-- Fancy Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Inter', sans-serif;
       background: #f9f7f6;
       color: #4b3e3e;
       margin: 0;
     }
+
     header {
       background: linear-gradient(135deg, #e8dede, #dbc1ac);
       text-align: center;
       padding: 2.5rem 1rem;
     }
-    h1 { margin: 0; font-size: 2.5rem; }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      font-size: 2.6rem;
+      letter-spacing: 0.5px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
     p { margin: 0.5rem 0; }
+
     section {
       max-width: 950px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
-    h2 {
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 1.5rem;
     }
+
     .card {
       background: #fff;
       border-radius: 14px;
@@ -44,32 +62,44 @@
       box-shadow: 0 3px 8px rgba(0,0,0,0.08);
       transition: transform 0.2s ease;
     }
+
     .card:hover { transform: translateY(-4px); }
+
     .card img {
       width: 100%;
       border-radius: 10px;
     }
+
     .card a {
       display: inline-block;
       margin-top: 0.6rem;
       text-decoration: none;
       color: #a06a6a;
-      font-weight: bold;
+      font-weight: 500;
     }
+
     .socials {
       margin-top: 1rem;
     }
+
     .socials a {
-      margin: 0 8px;
-      font-size: 1.4rem;
+      margin: 0 10px;
+      font-size: 1.5rem;
       color: #fff;
+      transition: opacity 0.2s ease;
     }
+
+    .socials a:hover {
+      opacity: 0.7;
+    }
+
     footer {
       text-align: center;
       background: #dbc1ac;
       padding: 1.5rem 1rem;
       color: #fff;
       margin-top: 2rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -78,10 +108,12 @@
 <header>
   <h1>The Flourich Edit</h1>
   <p>Curated finds • deals • everyday favorites ✨</p>
+
+  <!-- ADD YOUR REAL LINKS BELOW -->
   <div class="socials">
-    <a href="#"><i class="fab fa-pinterest"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-tiktok"></i></a>
+    <a href="https://pinterest.com/YOURUSERNAME" target="_blank"><i class="fab fa-pinterest"></i></a>
+    <a href="https://instagram.com/YOURUSERNAME" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://tiktok.com/@YOURUSERNAME" target="_blank"><i class="fab fa-tiktok"></i></a>
   </div>
 </header>
 
