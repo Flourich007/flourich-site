@@ -4,111 +4,94 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Flourich Edit</title>
-<link href="https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root{--cream:#faf7f4;--pink:#f8ecec;--gold:#b58d58;--teal:#4c9b93;--text:#4b433f;}
-*{box-sizing:border-box}
-body{margin:0;background:var(--cream);color:var(--text);font-family:Poppins,sans-serif;line-height:1.8}
-header{text-align:center;background:#fff;padding:50px 20px 25px;border-bottom:1px solid #eee}
-.logo{width:220px;max-width:80%}
-h1,h2{font-family:Allura,cursive;color:var(--gold)}
-h1{font-size:4rem;margin:10px 0 0}
-.tag{letter-spacing:3px;text-transform:uppercase;color:#888;font-size:.8rem}
-.hero{max-width:1150px;margin:auto;padding:55px 20px;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-.hero img{width:100%;max-width:420px;border-radius:24px;display:block;margin:auto;box-shadow:0 15px 30px rgba(0,0,0,.12)}
-.hero h2{font-size:3rem;margin:0}
-.btn{display:inline-block;margin:8px 10px 0 0;background:var(--gold);color:#fff;text-decoration:none;padding:12px 22px;border-radius:999px;font-weight:600}
-.btn:hover,.card a:hover{background:var(--teal)}
-.socials{margin-top:20px}
-.socials a{color:var(--teal);font-size:1.6rem;margin-right:15px}
-section{max-width:1100px;margin:65px auto;padding:0 20px}
-.title{text-align:center;font-size:3rem}
-.subtitle{text-align:center;color:#777;max-width:720px;margin:0 auto 28px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
-.card{background:#fff;border:1px solid #f1e7e7;border-radius:22px;padding:18px;box-shadow:0 8px 18px rgba(0,0,0,.06)}
-.card img{width:100%;border-radius:14px}
-.card h3{margin-bottom:6px}
-.card p{font-size:.92rem;color:#666}
-.card a{display:inline-block;background:var(--gold);color:#fff;text-decoration:none;padding:10px 18px;border-radius:999px}
-.highlight{background:var(--pink);padding:35px;border-radius:26px}
-video{display:block;width:100%;max-width:650px;margin:25px auto;border-radius:18px}
-footer{background:#fff;text-align:center;padding:45px 20px;margin-top:60px}
-.signature{font-family:Allura,cursive;font-size:2.2rem;color:var(--gold)}
-@media(max-width:850px){.hero{grid-template-columns:1fr;text-align:center}}
+:root{
+--bg:#fcf8f5;--pink:#d88b9d;--gold:#b88b5a;--text:#4a413d;
+}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Poppins,sans-serif}
+header{text-align:center;padding:40px 20px;background:#fff}
+.logo{font:400 4.8rem Allura,cursive;color:#222;margin:0}
+.small{font:600 .9rem Cormorant Garamond,serif;letter-spacing:4px;color:var(--pink)}
+.nav{display:flex;justify-content:center;gap:35px;padding:18px;border-top:1px solid #eee;border-bottom:1px solid #eee;background:#fff;flex-wrap:wrap}
+.nav a{text-decoration:none;color:#444;font-size:.85rem}
+.hero{display:grid;grid-template-columns:1fr 1fr;max-width:1300px;margin:auto}
+.hero img{width:100%;height:100%;object-fit:cover}
+.copy{padding:70px;background:#fff;display:flex;flex-direction:column;justify-content:center}
+.copy h2{font:400 3.5rem Allura,cursive;color:var(--pink);margin:0}
+.copy p{font-size:1rem;line-height:1.9}
+.sig{font:400 3rem Allura,cursive}
+.section{max-width:1200px;margin:70px auto;padding:0 20px}
+.title{text-align:center;font:600 2.8rem Cormorant Garamond,serif;letter-spacing:2px}
+.sub{text-align:center;font:400 1.4rem Allura,cursive;color:var(--pink)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.card{text-align:center}
+.card img{width:100%;border-radius:6px}
+.btn{display:inline-block;margin-top:12px;padding:10px 22px;background:#efc7d1;color:#444;text-decoration:none}
+.tiles{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.tile{background:#fff;padding:18px;border:1px solid #eee;text-align:center}
+footer{text-align:center;padding:50px;background:#fff;margin-top:60px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.grid,.tiles{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-
 <header>
-<img src="flourich-logo.png" class="logo" alt="The Flourich Edit Logo">
-<h1>The Flourich Edit</h1>
-<p class="tag">Let's Flourish Together</p>
+<div class="logo">The Flourich Edit</div>
+<div class="small">LET'S FLOURISH TOGETHER</div>
+<div style="margin-top:10px;font-size:.9rem">BEAUTY • LIFESTYLE • TRAVEL • EVERYDAY INSPIRATION</div>
 </header>
 
-<div class="hero">
-<div>
-<h2>Hi friend, 🌸</h2>
+<nav class="nav">
+<a href="#edit">THIS MONTH'S EDIT</a>
+<a href="#beauty">BEAUTY NOTES</a>
+<a href="#vanity">ON MY VANITY</a>
+<a href="#finds">COLLECTED FINDS</a>
+<a href="#home">HOME & AWAY</a>
+<a href="#brand">BEHIND THE BRAND</a>
+<a href="#work">LET'S CREATE TOGETHER</a>
+</nav>
+
+<section class="hero">
+<img src="nancy.jpeg" alt="Nancy">
+<div class="copy">
+<h2>Hi friend, ♡</h2>
 <p>Welcome to my little corner of the internet.</p>
-<p>The Flourich Edit is where I share the beauty products, home finds, travel essentials, and everyday moments that inspire me.</p>
+<p>The Flourich Edit is where I share the beauty products, home finds, travel essentials and everyday moments that inspire me.</p>
 <p>Whether you're here looking for your next favorite product, a little inspiration, or simply browsing, I'm so happy you stopped by.</p>
-<p><strong>I hope you discover something you love while you're here.</strong></p>
-<p>With love,<br><span class="signature">Nancy</span></p>
-
-<a class="btn" href="#edit">Discover This Month's Edit</a>
-<a class="btn" href="#create">Let's Create Together</a>
-
-<div class="socials">
-<a href="https://www.pinterest.com/FlourichwithNan/"><i class="fab fa-pinterest"></i></a>
-<a href="https://www.instagram.com/love_flouriches/"><i class="fab fa-instagram"></i></a>
-<a href="https://www.tiktok.com/@flourichwithnan"><i class="fab fa-tiktok"></i></a>
+<p style="color:#d88b9d"><strong>I hope you discover something you love while you're here.</strong></p>
+<p>With love,</p>
+<div class="sig">Nancy ♡</div>
 </div>
-</div>
+</section>
 
-<div>
-<img src="nancy.jpeg" alt="Nancy Perez">
-</div>
-</div>
-
-<section id="edit">
-<h2 class="title">This Month's Edit ✨</h2>
-<p class="subtitle">A few favorites I'm reaching for this month.</p>
+<section class="section" id="edit">
+<div class="title">THIS MONTH'S EDIT</div>
+<div class="sub">A collection of the products I'm reaching for most this month.</div>
 <div class="grid">
-<div class="card"><img src="Summer fridays lip oil.jpg"><h3>Summer Fridays Lip Oil</h3><p>The lip oil that's permanently in my purse.</p><a href="https://amzn.to/4rHr2vS">Discover</a></div>
-<div class="card"><img src="Kiehls Sunscreen.jpg"><h3>Kiehl's Sunscreen</h3><p>The SPF I wear every single day.</p><a href="https://amzn.to/4lEvZV3">Discover</a></div>
-<div class="card"><img src="mattress.jpg"><h3>Foldable Mattress</h3><p>One of the smartest purchases we made during our temporary move.</p><a href="https://amzn.to/4sVxEI1">Discover</a></div>
+<div class="card"><img src="Summer fridays lip oil.jpg"><h3>Summer Fridays Lip Oil</h3><p>The lip oil that's permanently in my purse.</p><a class="btn" href="https://amzn.to/4rHr2vS">Discover</a></div>
+<div class="card"><img src="Kiehls Sunscreen.jpg"><h3>Kiehl's Sunscreen</h3><p>The SPF I wear every day.</p><a class="btn" href="https://amzn.to/4lEvZV3">Discover</a></div>
+<div class="card"><img src="mattress.jpg"><h3>Foldable Mattress</h3><p>One of my smartest purchases.</p><a class="btn" href="https://amzn.to/4sVxEI1">Discover</a></div>
 </div>
 </section>
 
-<section><h2 class="title">Beauty Notes 💄</h2><p class="subtitle">The beauty products I reach for again and again.</p></section>
-<section><h2 class="title">On My Vanity 🪞</h2><p class="subtitle">The skincare routine that starts and ends my day.</p></section>
-<section><h2 class="title">Collected Finds ☁️</h2><p class="subtitle">Little discoveries that make everyday life easier and more beautiful.</p></section>
-<section><h2 class="title">Home & Away 🏡</h2><p class="subtitle">The pieces that make home cozy and travel effortless.</p></section>
-
-<section>
-<div class="highlight">
-<h2 class="title">Behind the Brand 🎥</h2>
-<p class="subtitle">A look behind some of the campaigns I've loved creating.</p>
-<video controls>
-<source src="armhammer.mp4" type="video/mp4">
-</video>
-<p style="text-align:center">My collaboration with <strong>Arm &amp; Hammer</strong> focused on authentic, relatable storytelling that shows products naturally fitting into everyday life.</p>
+<section class="section">
+<div class="tiles">
+<div class="tile" id="beauty"><h3>Beauty Notes</h3><p>The beauty products I find myself reaching for over and over again.</p><a class="btn" href="#">Discover</a></div>
+<div class="tile" id="vanity"><h3>On My Vanity</h3><p>The skincare routine that starts and ends my day.</p><a class="btn" href="#">Discover</a></div>
+<div class="tile" id="finds"><h3>Collected Finds</h3><p>Little discoveries that make everyday life easier.</p><a class="btn" href="#">Discover</a></div>
+<div class="tile" id="home"><h3>Home & Away</h3><p>The pieces that make home cozy and travel effortless.</p><a class="btn" href="#">Discover</a></div>
+<div class="tile" id="brand"><h3>Behind the Brand</h3><p>Watch my Arm & Hammer collaboration.</p><a class="btn" href="#">Discover</a></div>
 </div>
 </section>
 
-<section id="create">
-<div class="highlight">
-<h2 class="title">Let's Create Together 🌿</h2>
-<p style="text-align:center">Available for UGC videos, product reviews, lifestyle content, beauty content, affiliate partnerships and long-term collaborations.</p>
-<p style="text-align:center"><strong>Email:</strong> flourichllc@gmail.com</p>
-</div>
+<section class="section" id="work" style="text-align:center">
+<div class="title">Let's Create Together</div>
+<p>Available for UGC videos, product reviews, lifestyle content, beauty content, affiliate partnerships and long-term collaborations.</p>
+<p><strong>flourichllc@gmail.com</strong></p>
 </section>
 
 <footer>
 <p>Made with love,</p>
-<div class="signature">Nancy</div>
-<p>© 2025 The Flourich Edit</p>
+<div class="sig">Nancy ♡</div>
 </footer>
-
-</body>
-</html>
+</body></html>
